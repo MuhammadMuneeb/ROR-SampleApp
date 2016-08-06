@@ -55,7 +55,7 @@ class UserTest < ActiveSupport::TestCase
     end
 
     test "password should have a minimum length of 6 chars" do
-      @user.password = @user.password_confirmation = "a" * 5
+      @user.password = @user.password_confirmation = "a" * 6
       assert @user.valid?
     end
   end
